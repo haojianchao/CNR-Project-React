@@ -12,6 +12,8 @@ html, body, #root, .container {
         @include rect(100%, auto);
         @include flexbox();
         @include flex-direction(column);
+				
+				//Home
         .header {
             @include rect(100%, 0.5rem)
             @include background-color(#F8F8F8);
@@ -26,6 +28,10 @@ html, body, #root, .container {
                 img {
                     @include rect(auto, 0.22rem);
                 }
+								i{
+									@include font-size(0.25rem);
+									@include text-color(#000);
+								}
             }
             .center{
                 @include flex();
@@ -40,13 +46,12 @@ html, body, #root, .container {
                 }
             }
             .right{
-                @include flexbox();
-                @include rect(0.5rem, 100%);
-                @include justify-content();
-                @include align-items();
-                i {
-                    @include font-size(0.26rem)
-                }
+							@include rect(0.5rem, 100%);
+							@include text-align();
+							@include line-height(0.5rem);
+							i {
+									@include font-size(0.26rem)
+							}
             }
         }
         
@@ -88,7 +93,7 @@ html, body, #root, .container {
                 }
             }
             
-            .NNC, .BrandSale, .HotTop10{
+            .NNC, .BrandSale, .HotTop10, .LBSThrBd, .LBSFourBd, .LBSFiveBd, .LBSSixBd, .LBSSevBd, .LBSEigBd{
                 @include rect(100%, auto);
                
                 .SmBd{
@@ -145,9 +150,38 @@ html, body, #root, .container {
                img{
                    @include rect(100%, 1.5235rem); 
                }
-            }            
+            }
+      
+					//ListBrandSale
+					.TopBd{
+						@include rect(100%, auto); 
+						img{
+								@include rect(100%, 0.72rem); 
+						}
+					}
+					.SecBd{
+						@include rect(100%, auto); 
+						img{
+								@include rect(100%, 0.293rem);
+						}
+					}
+					
         }//content
         
+				.LHT10{ //HOTTOP10LIST
+					@include rect(100%, auto);
+					ul{
+						@include rect(100%, auto);
+						li{
+							@include rect(100%, auto);
+							img{
+								@include rect(100%, auto);
+							}
+						}
+					}
+				}
+				
+				//footer
         .footer{
             @include rect(100%, auto);           
             @include background-color(#fff);

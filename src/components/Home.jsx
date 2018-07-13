@@ -88,7 +88,7 @@ class Home extends Component {
 								store.getState().HomeNav.map( (item, index) => {
 									return (
 										<li key={index}>
-											<img src={item.NavUrl} />
+											<img src={item.NavUrl} alt='' />
 										</li>
 									)
 								})								
@@ -99,12 +99,12 @@ class Home extends Component {
 					<div className='NNC'>						
 						<div className='SmBd'>
 							<Link to='/listnnc'>
-								<img src={store.getState().HomeNNC.SmallBd} />
+								<img src={store.getState().HomeNNC.SmallBd} alt='' />
 							</Link>
 						</div>
 						<div className='BigBd'>
 							<Link to='/listnnc'>
-								<img src={store.getState().HomeNNC.BigBd} />
+								<img src={store.getState().HomeNNC.BigBd} alt='' />
 							</Link>
 						</div>
 						<div className='ProList'>
@@ -115,7 +115,7 @@ class Home extends Component {
 											<li key={index}>
 												<Link to='/listnnc'>
 													<div className='goodspic'>
-														<img src={item.imageUrl} />
+														<img src={item.imageUrl} alt='' />
 													</div>
 													<dl className='goodsinfo'>
 														<dt>{item.goodsName}</dt>
@@ -133,7 +133,7 @@ class Home extends Component {
 					<div className='BrandSale'>
 						<div className='SmBd'>
 							<Link to='/brandsale'>
-								<img src={store.getState().HomeBrandSale.SmallBd} />
+								<img src={store.getState().HomeBrandSale.SmallBd} alt='' />
 							</Link>
 						</div>	
 						<div className='ProList'>
@@ -144,7 +144,7 @@ class Home extends Component {
 											<li key={index}>
 												<Link to='/brandsale'>
 													<div className='goodspic'>
-														<img src={item.imageUrl} />
+														<img src={item.imageUrl} alt='' />
 													</div>
 													<dl className='goodsinfo'>
 														<dt>{item.goodsName}</dt>
@@ -162,12 +162,12 @@ class Home extends Component {
 					<div className='BdPic'>
 						<div>
 							<Link to='/home'>
-								<img src={store.getState().HomeBdPic.JZ} />
+								<img src={store.getState().HomeBdPic.JZ} alt='' />
 							</Link>
 						</div>	
 						<div>
 							<Link to='/home'>
-								<img src={store.getState().HomeBdPic.ZB} />
+								<img src={store.getState().HomeBdPic.ZB} alt='' />
 							</Link>
 						</div>
 					</div>
@@ -175,12 +175,12 @@ class Home extends Component {
 					<div className='HotTop10'>
 						<div className='SmBd'>
 							<Link to='/hottop10'>
-								<img src={store.getState().HomeHotTop10.SmallBd} />
+								<img src={store.getState().HomeHotTop10.SmallBd} alt='' />
 							</Link>
 						</div>	
 						<div className='BigBd'>
 							<Link to='/hottop10'>
-								<img src={store.getState().HomeHotTop10.BigBd} />
+								<img src={store.getState().HomeHotTop10.BigBd} alt='' />
 							</Link>
 						</div>
 						<div className='ProList'>
@@ -191,7 +191,7 @@ class Home extends Component {
 											<li key={index}>
 												<Link to='/hottop10'>
 													<div className='goodspic'>
-														<img src={item.imageUrl} />
+														<img src={item.imageUrl} alt='' />
 													</div>
 													<dl className='goodsinfo'>
 														<dt>{item.goodsName}</dt>

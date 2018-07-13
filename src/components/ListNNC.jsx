@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
 class ListNNC extends Component {
-	constructor (props) {
-		super(props)
-	}
 	
 	render () {
 		
