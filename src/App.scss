@@ -53,6 +53,10 @@ html, body, #root, .container {
 									@include font-size(0.26rem)
 							}
             }
+            
+            .regrig{
+                @include rect(0.8rem, 100%);
+            }
         }
         
         .content {
@@ -152,34 +156,34 @@ html, body, #root, .container {
                }
             }
       
-					//ListBrandSale
-					.TopBd{
-						@include rect(100%, auto); 
-						img{
-								@include rect(100%, 0.72rem); 
-						}
-					}
-					.SecBd{
-						@include rect(100%, auto); 
-						img{
-								@include rect(100%, 0.293rem);
-						}
-					}
+			//ListBrandSale
+			.TopBd{
+				@include rect(100%, auto); 
+				img{
+						@include rect(100%, 0.72rem); 
+				}
+			}
+			.SecBd{
+				@include rect(100%, auto); 
+				img{
+						@include rect(100%, 0.293rem);
+				}
+			}
 					
         }//content
         
-				.LHT10{ //HOTTOP10LIST
+		.LHT10{ //HOTTOP10LIST
+			@include rect(100%, auto);
+			ul{
+				@include rect(100%, auto);
+				li{
 					@include rect(100%, auto);
-					ul{
+					img{
 						@include rect(100%, auto);
-						li{
-							@include rect(100%, auto);
-							img{
-								@include rect(100%, auto);
-							}
-						}
 					}
 				}
+			}
+		}
 				
 				//footer
         .footer{
@@ -227,6 +231,78 @@ html, body, #root, .container {
                 @include text-align(); 
                 @include line-height(0.4rem);
                 @include font-size(0.08rem);
+            }
+        }
+        
+        //Detail
+        .DeGoodsName{
+            @include rect(100%, 0.55rem);
+            span{
+                display: inline-block;
+                @include rect(0.4rem, 0.2rem);
+                @include background-color(#ED5564);
+                border-radius: 0.05rem;
+                @include text-align();               
+            }
+        }
+        .DeGoodsPrice{
+            @include rect(100%, 0.55rem)
+        }
+        .DeArea{
+            @include rect(100%, 0.55rem)
+        }
+        .DeSerPro{
+            @include rect(100%, 0.55rem)
+        }
+        .DeGoodsEvaluate{
+            @include rect(100%, 0.55rem)
+        }
+        .DeGoodsRecommend{
+            @include rect(100%, 0.55rem)
+        }
+        .DeBtmSlide{
+            @include rect(100%, 0.55rem)
+        }
+        .DeGoodsDetail{
+            img{
+                 @include rect(100%, auto)
+            }
+        }
+        .DeFooter{
+            @include rect(100%, 0.45rem);           
+            @include background-color(#fff);
+            @include flexbox()
+            div{
+                @include text-align();
+                @include line-height(0.45rem);
+                @include font-size(0.12rem)
+                &:nth-child(1){
+                    @include rect(0.5rem, 0.45rem);
+                }
+                &:nth-child(2){
+                    @include rect(0.5rem, 0.45rem);
+                }
+                &:nth-child(3){
+                    @include flex();
+                    @include background-color(#ED5564);
+                    color: #fff;
+                }
+            }           
+        }
+        
+        .Register, .Login{
+            margin-top: 0.1rem;
+            h1{
+                @include text-align();               
+            }
+            input{
+                @include rect(90%, 0.3rem);
+                border: 1px solid #008D4C;
+                margin: 0.05rem 5%;
+            }
+            button{
+                @include rect(90%, 0.3rem);
+                margin: 0.05rem 5%;
             }
         }
         

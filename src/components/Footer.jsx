@@ -22,19 +22,19 @@ class Footer extends Component {
 				<div className='f-cen'>
 					<ul>
 						<li>
-							<Link to='/'>
+							<Link to='/home'>
 								<i className='iconfont icon-kehuduan' />
 								<p>客户端</p>
 							</Link>
 						</li>
 						<li>
-							<Link to='/'>
+							<Link to='/home'>
 								<i className='iconfont icon-bangzhushouji' />
 								<p>触屏版</p>
 							</Link>
 						</li>
 						<li>
-							<Link to='/'>
+							<Link to='/home'>
 								<i className='iconfont icon-huihua_fuzhi-copy' />
 								<p>电脑版</p>
 							</Link>

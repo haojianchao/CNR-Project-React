@@ -167,6 +167,21 @@ const ListHT10 = (state = [], action) => {
 	return state
 }
 
+const DetailInfo = ( state = {
+		DeInfo: [],
+		DeBan: [],
+		DeBody: []
+		
+}, action ) => {
+	const {type, data} = action
+	if (type === 'DETAIL_GET_INFO') {
+		state.DeInfo = data
+		state.DeBan = data.banner,
+		state.DeBody = data.BodyList
+	}
+	return state
+}
+
 const reducer = combineReducers({
 	HomeText,
 	HomeNav,
@@ -190,7 +205,8 @@ const reducer = combineReducers({
 	LBSSevProBd,
 	LBSEigBd,
 	LBSEigProBd,
-	ListHT10
+	ListHT10,
+	DetailInfo
 })
 
 const store = createStore(reducer)

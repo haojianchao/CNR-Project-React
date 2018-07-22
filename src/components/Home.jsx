@@ -113,7 +113,7 @@ class Home extends Component {
 									store.getState().HomeNNCList.map( (item, index) => {
 										return (
 											<li key={index}>
-												<Link to='/listnnc'>
+												<Link to='/detail'>
 													<div className='goodspic'>
 														<img src={item.imageUrl} alt='' />
 													</div>
@@ -142,7 +142,7 @@ class Home extends Component {
 									store.getState().HomeBSList.map( (item, index) => {
 										return (
 											<li key={index}>
-												<Link to='/brandsale'>
+												<Link to='/detail'>
 													<div className='goodspic'>
 														<img src={item.imageUrl} alt='' />
 													</div>
@@ -189,7 +189,7 @@ class Home extends Component {
 									store.getState().HomeHT10List.map( (item, index) => {
 										return (
 											<li key={index}>
-												<Link to='/hottop10'>
+												<Link to='/detail'>
 													<div className='goodspic'>
 														<img src={item.imageUrl} alt='' />
 													</div>

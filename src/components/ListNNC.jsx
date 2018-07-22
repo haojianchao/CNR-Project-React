@@ -9,7 +9,7 @@ class ListNNC extends Component {
 			<div className='main'>
 				<header className="header">NNC列表页</header>
 				<div className='content'>
-					bbbbb
+					
 				</div>
 			</div>
 		)
